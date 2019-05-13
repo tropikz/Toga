@@ -1,1 +1,10 @@
-# Aquatic
+Aquatic is an all you need bot. Everything from an ping command to a XP system, we've got you covered!
+
+Invite Aquatic:
+Coming Soon
+
+Developers/Helpers:
+tropikz - developer
+
+Join Our Support Server!
+Coming Soon
