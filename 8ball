@@ -1,0 +1,11 @@
+function random8ball() {
+    var rand = ['Yes', 'No', 'Try Again', 'NO', 'Maybe', 'Never', 'Yep'];
+
+    return rand[Math.floor(Math.random()*rand.length)];
+}
+
+client.on('message', message => {
+  if(message.content.startsWith("v!8ball")) {
+      message.channel.send('I think: ' + random8ball());
+  }
+})
