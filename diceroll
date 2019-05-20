@@ -1,1 +1,45 @@
-//ROLL A 6 SIDED DIE, RANDOM ANSWERS EVERYTIME
+function diceroll6() {
+  var rand = ['1', '2', '3', '4', '5', '6'];
+
+  return rand[Math.floor(Math.random() * rand.length)];
+}
+
+//roll6
+client.on('message', message => {
+  if (message.content == "?roll 6") {
+    message.channel.send({
+      embed: {
+        color: 0x2471a3,
+        author: {
+          name: client.user.username,
+          icon_url: client.user.avatarURL
+        },
+        title: "You rolled a 6 sided die",
+        description: "you rolled a: " + diceroll6()
+      }
+    })
+  }
+});
+
+function diceroll12() {
+  var rand = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'];
+
+  return rand[Math.floor(Math.random() * rand.length)];
+}
+
+//roll12
+client.on('message', message => {
+  if (message.content == "?roll 12") {
+    message.channel.send({
+      embed: {
+        color: 0x2471a3,
+        author: {
+          name: client.user.username,
+          icon_url: client.user.avatarURL
+        },
+        title: "You rolled a 12 sided die",
+        description: "you rolled a: " + diceroll12()
+      }
+    })
+  }
+});
